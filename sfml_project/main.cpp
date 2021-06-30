@@ -9,14 +9,11 @@ int main()
 	Window window(time);				
 	while (window.m_Window.isOpen())
 	{
-
 		while (window.m_Window.pollEvent(window.m_Event))
 		{
 			window.pollEvents();
 		}
-
 		window.run();
 	}
-
 	std::cin.get(); // bcuz cherno
 }

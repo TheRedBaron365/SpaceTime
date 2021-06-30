@@ -33,16 +33,11 @@ void Window::run()
 	drawer(clock.shapes);
 	m_Window.display();
 }
-void Window::drawer(std::vector<sf::RectangleShape*> &v)
-{
-	for (int i = 0; i < v.size(); i++)
-	{
-		m_Window.draw(*v[i]);
-	}
-}
-void Window::create()
-{/*
-	std::vector<sf::RectangleShape> images = clock.clockInit(*time);
-	drawer(images);*/
-}
 
+
+
+//void Window::drawer(std::vector<sf::RectangleShape*> &v)
+//{
+//	for (int i = 0; i < v.size(); i++)
+//		m_Window.draw(*v[i]);
+//}

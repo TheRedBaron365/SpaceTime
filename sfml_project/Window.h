@@ -11,9 +11,16 @@ public:
 	sf::Clock* time;
 	Clock clock;
 	void pollEvents();
+	template <class T>
+	void drawer(T& arg)
+	{
+		for (int i = 0; i < arg.size(); i++)
+			m_Window.draw(*arg[i]);
+	}
+
+	//void drawer(std::vector<sf::RectangleShape*>& v);
 	void run();
-	void create();
-	void drawer(std::vector<sf::RectangleShape*> &v);
+	
 	Window(sf::Clock &c);
 	
 	
