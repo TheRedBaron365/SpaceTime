@@ -23,7 +23,7 @@ void Window::run()
 		Display
 	*/
 
-	m_Window.clear(sf::Color::White);
+	m_Window.clear(sf::Color(200, 100, 80, 255));
 	clock.rotateHands(*time);
 	drawer(clock.shapes);
 
