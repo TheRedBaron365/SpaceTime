@@ -6,6 +6,7 @@
 int main()
 {
 	sf::Clock time;
+	
 	Window window(time);				
 	while (window.m_Window.isOpen())
 	{

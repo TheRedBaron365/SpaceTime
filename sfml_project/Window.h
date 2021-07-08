@@ -9,6 +9,7 @@ class Window
 public:
 
 	sf::RenderWindow m_Window;
+	sf::ContextSettings set;
 	sf::Event m_Event;
 	sf::Clock* time;
 	Clock clock;

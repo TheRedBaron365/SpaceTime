@@ -31,6 +31,7 @@ void Clock::clockInit()
 {
 	//Clock face settings
 	clock_face.setRadius(300.f);
+	clock_face.setPointCount(200);
 	clock_face.setOrigin(150.f, 150.f);
 	clock_face.setPosition(315 - 150, 325 - 150);
 
