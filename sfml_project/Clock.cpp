@@ -19,8 +19,8 @@ void Clock::drawIncrements()
 		temp.setFont(font);
 		temp.setString(std::to_string(i+1));
 		temp.setFillColor(sf::Color(240, 240, 240, 255));
-		transformer.rotate(30.f, sf::Vector2f( ( d.WIN_WIDTH / 2 ) - temp.getCharacterSize()  , d.WIN_HEIGHT / 2));
-		temp.setPosition(transformer.transformPoint(sf::Vector2f((d.WIN_WIDTH / 2) - (twelve.getCharacterSize()) + 10, 37)));
+		transformer.rotate(30.f, sf::Vector2f( ( d.WIN_WIDTH / 2 ) - temp.getCharacterSize(), d.WIN_HEIGHT / 2));
+		temp.setPosition(transformer.transformPoint(sf::Vector2f((d.WIN_WIDTH / 2) - (twelve.getCharacterSize()), 50)));
 		time_intervals.push_back(temp);
 	}
 	
