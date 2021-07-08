@@ -18,12 +18,12 @@ public:
 	int seconds_passed;
 	int minutes_passed;
 	Clock();
+	void drawIncrements();
 	void clockInit();
 	std::vector<sf::Drawable*> shapes;
 	std::vector<sf::Text> time_intervals;
 	void rotateHands(sf::Clock &t);
-
-
+	sf::Transform transformer; 
 };
 
 

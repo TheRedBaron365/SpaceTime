@@ -8,9 +8,6 @@ Window::Window(sf::Clock &c) : m_Window(sf::VideoMode(dims.WIN_HEIGHT, dims.WIN_
 	this->time = &c;
 	clock.clockInit();
 }
-
-
-
 void Window::pollEvents()
 {
 	if (m_Event.type == sf::Event::Closed)
@@ -18,8 +15,6 @@ void Window::pollEvents()
 		m_Window.close();
 	}
 }
-
-
 void Window::run()
 {
 	/*
@@ -31,13 +26,9 @@ void Window::run()
 	m_Window.clear(sf::Color::White);
 	clock.rotateHands(*time);
 	drawer(clock.shapes);
+
+	for (int i = 0; i < clock.time_intervals.size(); i++)
+		m_Window.draw(clock.time_intervals[i]);
+
 	m_Window.display();
 }
-
-
-
-//void Window::drawer(std::vector<sf::RectangleShape*> &v)
-//{
-//	for (int i = 0; i < v.size(); i++)
-//		m_Window.draw(*v[i]);
-//}

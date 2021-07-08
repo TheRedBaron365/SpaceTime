@@ -2,6 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include "Clock.h"
 #include <vector>
+
+
 class Window
 {
 public:
@@ -17,15 +19,8 @@ public:
 		for (int i = 0; i < arg.size(); i++)
 			m_Window.draw(*arg[i]);
 	}
-
-	//void drawer(std::vector<sf::RectangleShape*>& v);
 	void run();
-	
-	Window(sf::Clock &c);
-	
-	
-
-private:
+	Window(sf::Clock& c);
 };
 
 struct WIN_DIMEN
