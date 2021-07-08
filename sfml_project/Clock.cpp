@@ -49,10 +49,10 @@ void Clock::clockInit()
 	second_hand.setPosition(sf::Vector2f(d.WIN_HEIGHT / 2, d.WIN_WIDTH / 2));
 	second_hand.rotate(180.f);
 	minute_hand.setSize(sf::Vector2f(10.f, d.WIN_HEIGHT/3));
-	minute_hand.setPosition(sf::Vector2f(d.WIN_HEIGHT/2, d.WIN_WIDTH/2));
+	minute_hand.setPosition(sf::Vector2f(d.WIN_HEIGHT/2, d.WIN_WIDTH/2 - minute_hand.getSize().x));
 	minute_hand.rotate(180.f);
 	hour_hand.setSize(sf::Vector2f(30.f, d.WIN_HEIGHT/4));
-	hour_hand.setPosition(sf::Vector2f(d.WIN_HEIGHT/2, 10 + d.WIN_HEIGHT /2));
+	hour_hand.setPosition(sf::Vector2f(d.WIN_WIDTH/2, 10 + d.WIN_HEIGHT /2));
 	hour_hand.rotate(180.f);	
 	 
 	//Color settings
